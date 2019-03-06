@@ -1,1 +1,4 @@
-SELECT CONCAT(INITCAP(firstname), ",", INITCAP(lastnight)) AS shortlist FROM Elves WHERE "tegil" IN firstname OR "astar" IN lastname;
+SELECT Concat(Concat(Initcap(firstname), ' '), Initcap(lastname)) AS shortlist 
+FROM   elves 
+WHERE  firstname LIKE '%tegil%' 
+        OR lastname LIKE '%astar%'; 
