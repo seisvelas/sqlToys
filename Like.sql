@@ -17,4 +17,4 @@ last_name
 
 select first_name, last_name
 from names
-where first_name like '%_%_%_%';
+where first_name like '%_%_%_%_%_%_%'; // length 6
