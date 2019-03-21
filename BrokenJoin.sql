@@ -28,4 +28,4 @@ SELECT
   FROM people p
   JOIN job j ON p.id=j.people_id
   GROUP BY j.job_title
-  ORDER BY total_salary DESC;
+  ORDER BY average_salary DESC;
