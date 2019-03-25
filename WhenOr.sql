@@ -32,8 +32,7 @@ Tests require the use of CASE. Order by species.
 
 SELECT t.id as id, t.heads, t.arms, b.legs, b.tails,
 CASE 
-WHEN b.tails > b.legs THEN 'BEAST'
-WHEN t.heads > t.arms THEN 'BEAST'
+WHEN b.tails > b.legs OR t.heads > t.arms THEN 'BEAST'
 ELSE 'WEIRDO'
 END as species 
 FROM top_half AS t
