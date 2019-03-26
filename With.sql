@@ -1,4 +1,6 @@
 /*
+NOTE: Yes, the contrived with is actually how the tests WANT you to do this!
+
 For this challenge you need to create a SELECT statement, this SELECT statement will use an IN to check whether a department has had a sale with a price over 90.00 dollars BUT the sql MUST use the WITH statement which will be used to select all columns from sales where the price is greater than 90.00, you must call this sub-query special_sales.
 
 departments table schema
