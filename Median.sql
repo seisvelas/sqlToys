@@ -1,3 +1,5 @@
+/* this works (I got points!), but occasionally fails tests eg when the median score is a decimal. Unsure why */
+
 SELECT 
        MIN(r.score),
        (SELECT score FROM 
